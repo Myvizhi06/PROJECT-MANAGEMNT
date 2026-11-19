@@ -1,0 +1,13 @@
+{
+  "name": "project-management-system",
+  "version": "1.0.0",
+  "description": "Project and task management system using Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

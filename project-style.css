@@ -1,0 +1,24 @@
+/* Project Management System styles. Add these to your existing public page. */
+:root{--pm-primary:#6256cf;--pm-ink:#25283b;--pm-muted:#85899b;--pm-line:#e9eaf1;--pm-bg:#f6f7fb}
+.pm-dashboard{font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--pm-ink)}
+#projectStats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}
+.pm-stat,.pm-project-card{background:#fff;border:1px solid var(--pm-line);border-radius:13px;padding:18px}
+.pm-stat span{display:block;color:var(--pm-muted);font-size:12px;margin-bottom:7px}
+.pm-stat strong{font-size:25px}
+#projectList{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.pm-project-card{min-width:0;box-shadow:0 4px 18px #2222}
+.pm-project-top,.pm-meta,.pm-status-row,.pm-progress>div:first-child,.pm-task-heading,.pm-task{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.pm-project-card h3{font-size:18px;margin:9px 0}
+.pm-priority{display:inline-block;padding:4px 8px;border-radius:20px;background:#f0efff;color:#6256cf;font-size:10px;font-weight:700}
+.pm-priority.high{background:#fff0ef;color:#c44d4d}.pm-priority.medium{background:#fff5e5;color:#a8751d}.pm-priority.low{background:#eaf7ef;color:#268353}
+.pm-delete,.pm-task-delete{border:0;background:#fff0f0;color:#c34e55;border-radius:7px;padding:7px 10px;cursor:pointer}
+.pm-description{font-size:13px;color:#696e80;line-height:1.5;min-height:38px}
+.pm-meta{font-size:11px;color:var(--pm-muted);padding:12px 0;border-top:1px solid var(--pm-line)}
+.pm-status-row{font-size:12px;margin:8px 0}.pm-status-row select,.pm-task select{border:1px solid var(--pm-line);border-radius:7px;padding:7px;background:#fff;color:var(--pm-ink)}
+.pm-progress{margin:15px 0}.pm-progress>div:first-child{font-size:11px;color:var(--pm-muted);margin-bottom:8px}.pm-progress strong{color:var(--pm-primary)}
+.pm-progress-track{height:7px;background:#eeeef5;border-radius:10px;overflow:hidden}.pm-progress-track span{display:block;height:100%;background:var(--pm-primary);border-radius:10px}
+.pm-task-heading{border-top:1px solid var(--pm-line);padding-top:13px;font-size:12px}.pm-task-heading button{border:0;background:#f0efff;color:var(--pm-primary);border-radius:7px;padding:7px 9px;cursor:pointer;font-size:11px}
+.pm-task{padding:11px 0;border-bottom:1px solid #f0f1f5}.pm-task strong{display:block;font-size:12px}.pm-task small{display:block;color:var(--pm-muted);font-size:10px;margin-top:4px}.pm-task select{font-size:10px;max-width:105px}.pm-task-delete{padding:3px 8px}
+.pm-no-tasks,.pm-empty,.pm-error{font-size:12px;color:var(--pm-muted);padding:15px 0}.pm-error{color:#c34e55}
+@media(max-width:800px){#projectList{grid-template-columns:1fr}#projectStats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.pm-project-card{padding:14px}.pm-task{gap:6px}.pm-task select{max-width:90px}}
